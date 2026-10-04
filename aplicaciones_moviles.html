@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicaciones moviles</title>
+    <link rel="stylesheet" href="aplicaciones_moviles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="aplicaciones_moviles.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_aplicaciones_moviles|-->
+    <!----------------------------------------->
+    <header class="encabezado">
+        <h1>Aplicaciones Móviles</h1>
+        <p>Instala tus apps favoritas y califícalas con estrellas.</p>
+    </header>
+    <!-- Contenido principal de la página -->
+    <!-- Aquí están las tarjetas y el resumen -->
+    <main>
+        <!-- Contenedor de las cuatro tarjetas (data-id identifica cada app en JS) -->
+        <section class="tarjetas">
+            <!-- Tarjeta 1: Chat Rápido -->
+            <article class="tarjeta" data-id="chat">
+                <!-- Emoji que sirve de icono de la app -->
+                <div class="icono">💬</div>
+                <h2>Chat Rápido</h2>
+                <!-- Categoría de la app -->
+                <span class="categoria">Mensajería</span>
+                <p>Envía mensajes y fotos a tus amigos al instante.</p>
+                <!-- Aquí JavaScript dibuja las cinco estrellas -->
+                <div class="estrellas"></div>
+                <!-- Botón que instala o desinstala la app -->
+                <button class="btn-instalar">Instalar</button>
+            </article>
+            <!-- Tarjeta 2: Mapa Fácil -->
+            <article class="tarjeta" data-id="mapa">
+                <!-- Emoji que sirve de icono de la app -->
+                <div class="icono">🗺️</div>
+                <h2>Mapa Fácil</h2>
+                <!-- Categoría de la app -->
+                <span class="categoria">Viajes</span>
+                <p>Encuentra rutas y lugares cercanos sin perderte.</p>
+                <!-- Aquí JavaScript dibuja las cinco estrellas -->
+                <div class="estrellas"></div>
+                <!-- Botón que instala o desinstala la app -->
+                <button class="btn-instalar">Instalar</button>
+            </article>
+            <!-- Tarjeta 3: Música Play -->
+            <article class="tarjeta" data-id="musica">
+                <!-- Emoji que sirve de icono de la app -->
+                <div class="icono">🎧</div>
+                <h2>Música Play</h2>
+                <!-- Categoría de la app -->
+                <span class="categoria">Entretenimiento</span>
+                <p>Escucha tus canciones favoritas y crea listas.</p>
+                <!-- Aquí JavaScript dibuja las cinco estrellas -->
+                <div class="estrellas"></div>
+                <!-- Botón que instala o desinstala la app -->
+                <button class="btn-instalar">Instalar</button>
+            </article>
+            <!-- Tarjeta 4: Galería Plus -->
+            <article class="tarjeta" data-id="galeria">
+                <!-- Emoji que sirve de icono de la app -->
+                <div class="icono">🖼️</div>
+                <h2>Galería Plus</h2>
+                <!-- Categoría de la app -->
+                <span class="categoria">Fotografía</span>
+                <p>Organiza tus fotos y edítalas con filtros.</p>
+                <!-- Aquí JavaScript dibuja las cinco estrellas -->
+                <div class="estrellas"></div>
+                <!-- Botón que instala o desinstala la app -->
+                <button class="btn-instalar">Instalar</button>
+            </article>
+        </section>
+        <!-- Fin de las tarjetas -->
+        <!-- Resumen: apps instaladas y calificación promedio -->
+        <section class="resumen">
+            <h2>Tu teléfono</h2>
+            <!-- Aquí JavaScript escribe el resumen -->
+            <p id="textoResumen"></p>
+            <!-- Botón que borra todos los datos guardados -->
+            <button id="btnReiniciar">Reiniciar todo</button>
+        </section>
+    </main>
+</body>
+</html>
